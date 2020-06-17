@@ -10,12 +10,12 @@ Alternatively, you can clone this repo.
 
 ### Npm scripts
 
-| Syntax          | Description                                                                        |
-|-----------------|------------------------------------------------------------------------------------|
-| `dev`            | Development (to test dynamic imports use ``npm run dev -- -D``)                                                    |
-| `build`          | Build a bundled app for SSR + prerendering and a dynamic app for code splitting   |
-| `preview-build`  | Run after build to preview app                                                    |
-| `deploy:*`       | Deploy to netlify or now                                                          |
+| Syntax          | Description                                                                     |
+| --------------- | ------------------------------------------------------------------------------- |
+| `dev`           | Development (to test dynamic imports use `npm run dev -- -D`)                   |
+| `build`         | Build a bundled app for SSR + prerendering and a dynamic app for code splitting |
+| `preview-build` | Run after build to preview app                                                  |
+| `deploy:*`      | Deploy to netlify or now                                                        |
 
 ### SSR and pre-rendering
 
@@ -25,7 +25,7 @@ SSR and pre-rendering are included in the default build process.
 
 To render async data, call the `$ready()` helper whenever your data is ready.
 
-If $ready() is present, rendering will be delayed till the function has been called.
+If \$ready() is present, rendering will be delayed till the function has been called.
 
 Otherwise it will be rendered instantly.
 
@@ -33,9 +33,9 @@ See [src/pages/example/api/[showId].svelte](https://github.com/sveltech/routify-
 
 ### Production
 
-* For SPA or SSR apps please make sure that url rewrite is enabled on the server.
-* For SPA redirect to `__dynamic.html`.
-* For SSR redirect to the lambda function or express server.
+- For SPA or SSR apps please make sure that url rewrite is enabled on the server.
+- For SPA redirect to `__dynamic.html`.
+- For SSR redirect to the lambda function or express server.
 
 ### Issues?
 
