@@ -8,13 +8,22 @@
     "start": "sirv dist --single __app.html",
     "preview-build": "cd scripts/server && node index",
     "deploy:netlify": "cd scripts/netlify && npm run deploy",
-    "rollup": "rollup -cw"
+    "rollup": "rollup -cw",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.2",
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@rollup/plugin-commonjs": "^11.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-centered": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/svelte": "^5.3.19",
     "@sveltech/routify": "^1.4.7",
+    "babel-loader": "^8.1.0",
     "concurrently": "^5.0.2",
     "del": "^5.1.0",
     "postcss": "^7.0.32",
@@ -29,7 +38,8 @@
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
     "sirv-cli": "^1.0.0-next.2",
-    "svelte": "3.19.2",
+    "svelte": "^3.23.2",
+    "svelte-loader": "^2.13.6",
     "svelte-preprocess": "^3.9.7",
     "tailwindcss": "^1.4.6"
   },
